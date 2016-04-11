@@ -1,12 +1,25 @@
 ## What we did in the last week.
 
-We collected a bunch of gps location data(3 days).
+Fix the GPS collector:
 
-Built a simple 'heat map'.
+1.It can automatically collect the gps location (every 5 mins);
 
-We cannot get a very clearly routine of what a person does everyday because of the lack of data set
+2.Add timestamp into the localStorage
 
-So next step is to collect as much data as we can.
+3.Change the output file from .txt to .csv
+
+
+We collected a few gps location data(3 days).
+
+Built a simple 'heat map':
+
+1.Scale the map;
+
+2.Use different color to mark the point's frequency.
+
+Next step:
+
+More and more data is needed. 
 
 And think of a way to deal with the 'heat map'.
 
