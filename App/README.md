@@ -70,3 +70,7 @@ Lijian Wan analyzes the output data and debugs.
 ## License
 
 This is Ionic Framework Google Maps application made for blog article: http://www.gajotres.net/using-cordova-geoloacation-api-with-google-maps-in-ionic-framework/
+
+##Next Step
+
+Using "GO" language to construct a server that can upload and download from it.
