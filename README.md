@@ -1,6 +1,6 @@
 ## What we did in the last week.
 
-Fix the GPS collector:
+##Fix the GPS collector:
 
 1.It can automatically collect the gps location (every 5 mins);
 
@@ -17,7 +17,7 @@ Fix the GPS collector:
 7.Fix front page that can download the csv file using a click button
 
 
-We collected a few gps location data(8 days).
+##We collected a few gps location data(8 days).
 
 Built a simple 'heat map':
 
@@ -28,13 +28,13 @@ Built a simple 'heat map':
 3.Analyze the heat map so that we can get a conclusion that the person which produces the gps location is in normal routine or not.
 
 
-Problem we met:
+##Problem we met:
 
 1.ngCordova may not work as we excepted because some function like "$cordovaFile.uploadFile()", "$cordovaSQLite.openDB()","$cordovaFileTransfer.upload()" doesn't work well with ionic
 
 2.The SQLite sometimes doesn't work well with ngCordova. The data we saved sometimes are not ordered, we have to re-deal with the data set. So I'm thinking about a new way to save the data set like using localStorage.
 
-Next step:
+##Next step:
 
 More and more data is needed. 
 
