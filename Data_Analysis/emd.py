@@ -14,8 +14,8 @@ second = np.array([5.0, 3.0])
 ### May need rescale, but here our collected data is the same size
 
 ## read two images
-img1 = misc.imread("606.jpg")
-img2 = misc.imread("607.jpg")
+img1 = misc.imread("606.jpg", "grey")
+img2 = misc.imread("607.jpg", "grey")
 
 
 ## merge into one-dimension
@@ -29,7 +29,14 @@ print img2.shape, img2.dtype
 
 
 # symmetric (metric)
+width = img1.shape[0]
+height = img2.shape[1]
+N = width * height
+
+b = np.random.random_sample(size=(N,N))
+b_symm = (b + b.T)/2
+
 distance_matrix = np.array([[0.0, 0.5], [0.5, 0.0]])
 
 # calculate the EMD distance for two.
-print emd(img1.flatten(), img2.flatten(), distance_matrix)
+print emd(img1.flatten(), img2.flatten(), b_symm)
