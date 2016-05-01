@@ -1,9 +1,14 @@
-function [f, fval] = test(varargin)
+%%%
+% Author: Chang Liu
+% for computing EMD using two heatmaps
+%%%
+
+function [f, fval] = demo(varargin)
 
 % Images
 if nargin == 0
-    A = imread('pout.tif');
-    B = imread('cameraman.tif');
+    A = imread('Day1.png');
+    B = imread('Day2.png');
 elseif nargin == 2
     A = varargin{1};
     B = varargin{2};
@@ -14,6 +19,11 @@ elseif nargin == 2
         B = imread(B);
     end;
 end;
+
+% convert raw image to grey-scale, otherwise crash for generating histogram
+% Chang Liu
+A = rgb2gray(A);
+B = rgb2gray(B);
 
 % Histograms
 nbins = 10;
