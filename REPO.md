@@ -43,7 +43,7 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 	 
 * 2.Build a heat map each day using collected data
 	* Using google map API
-	* <a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/Heatmaps">Heatmaps
+	* Heatmaps
 	
 	* <img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/Day6-to-uni.png" width="480" height="260">
 
@@ -89,16 +89,16 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 
 
 
-### Heatmaps
-* The heatmaps we built in the last 2 weeks
-* <a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/Heatmaps">Heatmaps link
+	* Heatmaps
+		* The heatmaps we built in the last 2 weeks
+		* Heatmaps link(https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/Heatmaps)
 
 
 # Project evaluation
 * Paper reference
 	* We use regard this trajectories as a reference for detecting a person's daily routine.
 	
-		* trajectories link<a href=" http://www.ucl.ac.uk/~ucfamus/papers/ubicomp15_trajectories.pdf">
+		* trajectories link(http://www.ucl.ac.uk/~ucfamus/papers/ubicomp15_trajectories.pdf)
 
 * Comparison
 	* I think the paper's data set is better than us because they got 14 people's geolocation data and give them a PHQ to verify if the result is right or not. What we used is just a dataset from only one person so it cannot cover some special case.
