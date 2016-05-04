@@ -12,11 +12,11 @@ If the map shows that there is a big difference in EMD value we could infer that
 * [@Guanling Chen](https://github.com/gchenhub)
 
 # Video Demo
-<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Get%20GPS.png?raw=true" width="150" height="320">
+<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Get%20GPS.png?raw=true" width="300" height="260">
 Geolocation Collector(http://www.screencast.com/t/81hgh1he5Af)
 
 # Interface and Report
-<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Interface.png?raw=true" width="150" height="300">
+<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Interface.png?raw=true" width="200" height="260">
 <img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/heatmap.png" width="480" height="260">
 
 # Weekly Report
