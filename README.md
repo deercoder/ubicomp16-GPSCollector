@@ -32,7 +32,6 @@ Geolocation Collector(http://www.screencast.com/t/81hgh1he5Af)
 * Connect google map API with Ionic framework
 * Using google map API in the javaScript but failed due to the platform version
 * Display the google map in <div>
-    
 * Trying to connect ngCordova with sqlite
 * Only use ngCordova to get current geolocation but cannot connect it to sqlite
 * Use localstorage instead
