@@ -1,47 +1,59 @@
-## What we did in the last week.
+#Routine Detection
+We use GPS data to build a heat map and analyze the map based on an algorithm. 
+And use the daily map to build a pattern for a person and set a initial EMD value for him/her.
+If the map shows that there is a big difference in EMD value we could infer that the person's routine is abnormal.
 
-##Fix the GPS collector:
+#Contributors
+* [@Duo Liu](https://github.com/DuoL)
+* [@Chang Liu](https://github.com/deercoder)
+* [@Lijian Wan](https://github.com/LijianWan)
 
-1.It can automatically collect the gps location (every 5 mins);
+#Advisor
+* [@Guanling Chen](https://github.com/gchenhub)
 
-2.Add timestamp into the localStorage
+# Video Demo
+<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Get%20GPS.png?raw=true" width="150" height="260">
+<a href=http://www.screencast.com/t/81hgh1he5Af>
 
-3.Change the output file from .txt to .csv
+# Interface and Report
+<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Interface.png?raw=true" width="150" height="260">
 
-4.Add a marker to mark where you actually is
+<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/heatmap.png" width="480" height="260">
 
-5.Using graph algorithm to find the difference between the two days and analyze a warning result if there is a exception
+# Weekly Report
+## Progress   March,28
 
-6.Learning a new language named "GO" to build a server in the backend
+* Build a basic framework with Ionic
 
-7.Fix front page that can download the csv file using a click button
+## Progress   April,04
+
+* Connect google map API with Ionic framework 
+
+* Trying to connect ngCordova with sqlite
+
+## Progress   April,11
+
+* Change sqlite into localstorage
+
+* Start to gather the GPS location
+
+## Progress   April,18
+
+* Build a heat map by using matlab based on collected data
+
+* Try another data set (Microsoft data set)
 
 
-##We collected a few gps location data(8 days).
+## Progress   April,25
 
-Built a simple 'heat map':
+* Final debug and put the algorithm into use
 
-1.Scale the map;
+* Build another version heat map by using google map API
 
-2.Use different color to mark the point's frequency.
+## Progress   April,30
 
-3.Analyze the heat map so that we can get a conclusion that the person which produces the gps location is in normal routine or not.
+* Get a result on collected data
 
+* Try our best to get more data
 
-##Problem we met:
-
-1.ngCordova may not work as we excepted because some function like "$cordovaFile.uploadFile()", "$cordovaSQLite.openDB()","$cordovaFileTransfer.upload()" doesn't work well with ionic
-
-2.The SQLite sometimes doesn't work well with ngCordova. The data we saved sometimes are not ordered, we have to re-deal with the data set. So I'm thinking about a new way to save the data set like using localStorage.
-
-##Next step:
-
-More and more data is needed. 
-
-And think of a way to deal with the 'heat map'.
-
-Think of a model that can train the data set. 
- 
-Build  a server which we could share data set with each other.
-
- 
+* Build a server as soon as possible
