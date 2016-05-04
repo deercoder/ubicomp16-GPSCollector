@@ -31,7 +31,7 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 
 * Basic flow
 
-<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Basic%20flow.jpg"  width="480" height="260">
+<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Basic%20flow.jpg"  width="600" height="300">
 
 * 1.Develop a Geolocation collector by using: 
 	* Framework:Ionic
@@ -43,8 +43,10 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 	 
 * 2.Build a heat map each day using collected data
 	* Using google map API
-<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/Day6-to-uni.png" width="480" height="260">
 	* <a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/Heatmaps">Heatmaps
+	
+	<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/Day6-to-uni.png" width="480" height="260">
+
 * 3.Design an algorithm to deal with the heat maps 
 	* <a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/EMD">EMD
 
@@ -66,25 +68,26 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 * www
 	* index.html:The front page of the app where you can see how many scrpits are there in the background
 	* js
-		*app.js: deploy the controller in every page
-		*controllers.js:create some functions like getCurrentGeolocation about the front page
-		*directives.js: if using angular model then we can add it here 
-		*ng-cordova.min.js: the resource file of ngCordova
-		*route.js:link the controller to every page in the template
-		*service.js:same as controller but in this app it could be empty
+		* app.js: deploy the controller in every page
+		* controllers.js:create some functions like getCurrentGeolocation about the front page
+		* directives.js: if using angular model then we can add it here 
+		* ng-cordova.min.js: the resource file of ngCordova
+		* route.js:link the controller to every page in the template
+		* service.js:same as controller but in this app it could be empty
 
 	*css
-		*format every html page
+		* format every html page
 	
 	*lib
-		*save for angularJS
+		* save for angularJS
 
 ## Data_Analysis file
 ### EMD file
-	* <a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/EMD">EMD link
+* <a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/EMD">EMD link
 
 ### Heatmaps
-	* The heatmaps we built in the last 2 weeks<a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/Heatmaps">
+* The heatmaps we built in the last 2 weeks
+* <a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/Heatmaps">Heatmaps link
 
 
 # Project evaluation
@@ -95,7 +98,7 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 	* I think the paper's data set is better than us because they got 14 people's geolocation data and give them a PHQ to verify if the result is right or not. What we used is just a dataset from only one person so it cannot cover some special case.
 	
 	* Using PHQ may cost a lot of time and sometimes it might be hard to have volunteers.So we did better than the novel is that we use heat map to analyze the data set which is visually much convenient than the novel we used EMD to show the difference between a normal image and an abnormal image it is absolutely easy for most people to recgonize this pattern. 
-*Learned things
+* Learned things
 
 	* We've learned that GPS is an amazing data that we can use it not only to get our destination but also can help us infer if a person is in his normal routine or not. What's more, we hope that we could infer a person's GPA based on the GPS data set.
 	
