@@ -24,7 +24,7 @@ Geolocation Collector(http://www.screencast.com/t/81hgh1he5Af)
 ## Progress   March,28
 
 * Build a basic framework with Ionic
-  *Start to use Ionic creator to build a human interaction
+  **Start to use Ionic creator to build a human interaction
   *Create a Ionic project named myGPS
 
 ## Progress   April,04
