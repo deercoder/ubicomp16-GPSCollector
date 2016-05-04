@@ -31,7 +31,7 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 
 * Basic flow
 
-<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Basic%20flow.jpg"  width="700" height="400">
+<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Basic%20flow.jpg"  width="800" height="400">
 
 * 1.Develop a Geolocation collector by using: 
 	* Framework:Ionic
@@ -45,29 +45,29 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 	* Using google map API
 	* Heatmaps
 	
-	* <img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/Day6-to-uni.png" width="480" height="260">
+	* <img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/Day6-to-uni.png" width="800" height="400">
 
 * 3.Design an algorithm to deal with the heat maps 
 	* EMD
-	* <img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/get%20result.png" "480" height="260">
+	* <img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/get%20result.png" "800" height="400">
 
 
 # File structure
 * App file
 	* hooks
 		* This collected how many plugins I've used in this app
-
 	* platforms
 		* The simulator of both ios and android are here
-
 	* resources
 		* Both the ios and android drivers are here
-
 	* scss
 		* Ionic framework's structure like css for html
-
 	* www
 		* index.html:The front page of the app where you can see how many scrpits are there in the background
+		* css
+			* format every html page
+		* lib
+			* save for angularJS
 		* js	
 			* app.js: deploy the controller in every page
 			* controllers.js:create some functions like getCurrentGeolocation about the front page
@@ -75,20 +75,10 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 			* ng-cordova.min.js: the resource file of ngCordova
 			* route.js:link the controller to every page in the template
 			* service.js:same as controller but in this app it could be empty
-
-		* css
-			* format every html page
-	
-		* lib
-			* save for angularJS
-
 	* Data_Analysis file
 		* EMD file: EMD is our selected algorithm to compare images and compute distance between two images.
 			* MATLAB: MATALB implementation of EMD distance for faster convergence(as pyEMD is too time-consuming when building the histgram, and comparing too many images)
 			* PYTHON: We use open source pyEMD to calculate the distance between two images, and this emd.py demo shows how it works for two natural images, we can further extend it to heatmap images as well.
-
-
-
 	* Heatmaps
 		* The heatmaps we built in the last 2 weeks
 		* Heatmaps link(https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/Heatmaps)
