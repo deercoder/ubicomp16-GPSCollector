@@ -31,7 +31,7 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 
 * Basic flow
 
-<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Basic%20flow.jpg"  width="600" height="300">
+<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Basic%20flow.jpg"  width="700" height="400">
 
 * 1.Develop a Geolocation collector by using: 
 	* Framework:Ionic
@@ -45,45 +45,49 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 	* Using google map API
 	* <a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/Heatmaps">Heatmaps
 	
-	<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/Day6-to-uni.png" width="480" height="260">
+	* <img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/Day6-to-uni.png" width="480" height="260">
 
 * 3.Design an algorithm to deal with the heat maps 
-	* <a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/EMD">EMD
+	* EMD
+	* <img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/get%20result.png" "480" height="260">
 
 
 # File structure
-## App file
-* hooks
-	* This collected how many plugins I've used in this app
+* App file
+	* hooks
+		* This collected how many plugins I've used in this app
 
-* platforms
-	* The simulator of both ios and android are here
+	* platforms
+		* The simulator of both ios and android are here
 
-* resources
-	* Both the ios and android drivers are here
+	* resources
+		* Both the ios and android drivers are here
 
-* scss
-	* Ionic framework's structure like css for html
+	* scss
+		* Ionic framework's structure like css for html
 
-* www
-	* index.html:The front page of the app where you can see how many scrpits are there in the background
-	* js
-		* app.js: deploy the controller in every page
-		* controllers.js:create some functions like getCurrentGeolocation about the front page
-		* directives.js: if using angular model then we can add it here 
-		* ng-cordova.min.js: the resource file of ngCordova
-		* route.js:link the controller to every page in the template
-		* service.js:same as controller but in this app it could be empty
+	* www
+		* index.html:The front page of the app where you can see how many scrpits are there in the background
+		* js	
+			* app.js: deploy the controller in every page
+			* controllers.js:create some functions like getCurrentGeolocation about the front page
+			* directives.js: if using angular model then we can add it here 
+			* ng-cordova.min.js: the resource file of ngCordova
+			* route.js:link the controller to every page in the template
+			* service.js:same as controller but in this app it could be empty
 
-	*css
-		* format every html page
+		* css
+			* format every html page
 	
-	*lib
-		* save for angularJS
+		* lib
+			* save for angularJS
 
-## Data_Analysis file
-### EMD file
-* <a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/EMD">EMD link
+	* Data_Analysis file
+		* EMD file: EMD is our selected algorithm to compare images and compute distance between two images.
+			* MATLAB: MATALB implementation of EMD distance for faster convergence(as pyEMD is too time-consuming when building the histgram, and comparing too many images)
+			* PYTHON: We use open source pyEMD to calculate the distance between two images, and this emd.py demo shows how it works for two natural images, we can further extend it to heatmap images as well.
+
+
 
 ### Heatmaps
 * The heatmaps we built in the last 2 weeks
@@ -93,7 +97,9 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 # Project evaluation
 * Paper reference
 	* We use regard this trajectories as a reference for detecting a person's daily routine.
-		* <a href=" http://www.ucl.ac.uk/~ucfamus/papers/ubicomp15_trajectories.pdf">link
+	
+		* trajectories link<a href=" http://www.ucl.ac.uk/~ucfamus/papers/ubicomp15_trajectories.pdf">
+
 * Comparison
 	* I think the paper's data set is better than us because they got 14 people's geolocation data and give them a PHQ to verify if the result is right or not. What we used is just a dataset from only one person so it cannot cover some special case.
 	
