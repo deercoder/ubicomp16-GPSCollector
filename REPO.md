@@ -88,7 +88,7 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 * Paper reference
 	* We use regard this trajectories as a reference for detecting a person's daily routine.
 	
-		* trajectories link(http://www.ucl.ac.uk/~ucfamus/papers/ubicomp15_trajectories.pdf)
+	* trajectories Paper link(http://www.ucl.ac.uk/~ucfamus/papers/ubicomp15_trajectories.pdf)
 
 * Comparison
 	* I think the paper's data set is better than us because they got 14 people's geolocation data and give them a PHQ to verify if the result is right or not. What we used is just a dataset from only one person so it cannot cover some special case.
