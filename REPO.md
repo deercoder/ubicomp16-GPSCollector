@@ -1,4 +1,4 @@
-# Routine Detection
+# Final report for Routine Detection
 We use GPS data to build a heat map and analyze the map based on an algorithm.
 And use the daily map to build a pattern for a person and set a initial EMD value for him/her. If the map shows that there is a big difference in EMD value we could infer that the person's routine is abnormal.
 
