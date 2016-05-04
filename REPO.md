@@ -1,33 +1,36 @@
 #Routine Detection
-	We use GPS data to build a heat map and analyze the map based on an algorithm. And use the daily map to build a pattern for a person and set a initial EMD value for him/her. If the map shows that there is a big difference in EMD value we could infer that the person's routine is abnormal.
+We use GPS data to build a heat map and analyze the map based on an algorithm.
+And use the daily map to build a pattern for a person and set a initial EMD value for him/her. If the map shows that there is a big difference in EMD value we could infer that the person's routine is abnormal.
 
 #Project goal
-	Nowadays people are easily getting depression so an app to detect if a person is in his/her normal routine or not is needed for us.
-	If a person has some abnormal behaviors at some day, we could use this app to detect where would he go and infer that what will he do.
+Nowadays people are easily getting depression so an app to detect if a person is in his/her normal routine or not is needed for us.
+If a person has some abnormal behaviors at some day, we could use this app to detect where would he go and infer that what will he do.
 
 #Contributors
-	* [@Duo Liu](https://github.com/DuoL)
-	* [@Chang Liu](https://github.com/deercoder)
-	* [@Lijian Wan](https://github.com/LijianWan)
+*[@Duo Liu](https://github.com/DuoL)
+*[@Chang Liu](https://github.com/deercoder)
+*[@Lijian Wan](https://github.com/LijianWan)
 
 #Advisor
 * [@Guanling Chen](https://github.com/gchenhub)
 
 #Background
-	We are living in a big data area where sensors are everywhere, i.e. Fitbit to record every day activity, Light sensor to control the light; even smart phones have a lot of sensor in it. How can we make use of these sensors? We came up with an idea which is that since we use our phone every day, why don’t we make use of the GPS sensor in it to record our daily location. If one day we feel tired, I can look back into the data and find out the reason of it. Maybe we stay in GYM for a long time or maybe I walked a long distance. Therefore we use Google map API to record our daily location data, and use these data to generate a heatmap, then use the heatmap to find out the anomaly.
+We are living in a big data area where sensors are everywhere, i.e. Fitbit to record every day activity, Light sensor to control the light; even smart phones have a lot of sensor in it. How can we make use of these sensors? We came up with an idea which is that since we use our phone every day, why don’t we make use of the GPS sensor in it to record our daily location. If one day we feel tired, I can look back into the data and find out the reason of it. Maybe we stay in GYM for a long time or maybe I walked a long distance. Therefore we use Google map API to record our daily location data, and use these data to generate a heatmap, then use the heatmap to find out the anomaly.
 
 #Project features
-	The app is easy to use and the users don't have to open it all the time, it can run in the background and save a lot battery
+*run in the background
+*run every 10 seconds
+*cost 3% of battery for every 20mins
 
 
 #Project design
-##Approach
-	<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Approach.png" width="480" height="260">
+*Approach
+<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Approach.png" width="480" height="260">
 
-##Basic flow
-	<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Basic%20flow.jpg"  width="480" height="260">
+*Basic flow
+<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Basic%20flow.jpg"  width="480" height="260">
 
-##1.Develop a Geolocation collector by using: <a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/App">
+*1.Develop a Geolocation collector<a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/App"> by using: 
 	*Framework:Ionic
 	*API:Google Map API
 	*Database:localStorage
@@ -35,11 +38,11 @@
 	*Page:HTML
 	*Script:JavaScript
 	 
-##2.Build a heat map each day using collected data
+*2.Build a heat map each day using collected data
 	*Using google map API<a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/Heatmaps">
-	<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/Day6-to-uni.png" width="480" height="260">
+<img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/Day6-to-uni.png" width="480" height="260">
 
-##3.Design an algorithm to deal with the heat maps 
+*3.Design an algorithm to deal with the heat maps 
 	EMD<a href="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/tree/master/Data_Analysis/EMD">
 
 
