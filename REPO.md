@@ -44,7 +44,6 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 * 2.Build a heat map each day using collected data
 	* Using google map API
 	* Heatmaps
-	
 	* <img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/Day6-to-uni.png" width="800" height="400">
 
 * 3.Design an algorithm to deal with the heat maps 
@@ -93,10 +92,13 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 * Comparison
 	* I think the paper's data set is better than us because they got 14 people's geolocation data and give them a PHQ to verify if the result is right or not. What we used is just a dataset from only one person so it cannot cover some special case.
 	
-	* Using PHQ may cost a lot of time and sometimes it might be hard to have volunteers.So we did better than the novel is that we use heat map to analyze the data set which is visually much convenient than the novel we used EMD to show the difference between a normal image and an abnormal image it is absolutely easy for most people to recgonize this pattern. 
+	* Using PHQ Score may cost a lot of time and sometimes it might be hard to have volunteers.So we did better than the novel is that we use heat map to analyze the data set which is visually much convenient than the novel we used EMD to show the difference between a normal image and an abnormal image it is absolutely easy for most people to recgonize this pattern. 
+	
 * Learned things
 
 	* We've learned that GPS is an amazing data that we can use it not only to get our destination but also can help us infer if a person is in his normal routine or not. What's more, we hope that we could infer a person's GPA based on the GPS data set.
+	
+	* We currently have no ways to verify the correctness of our result but using PHQ might be a good try
 	
 # References
 >[1]Ionic http://ionicframework.com/
