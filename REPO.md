@@ -86,7 +86,7 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 
 # Project evaluation
 * Paper reference
-	* We use regard this trajectories as a reference for detecting a person's daily routine.
+	* We use this trajectories as a reference for detecting a person's daily routine.
 	
 	* trajectories Paper link(http://www.ucl.ac.uk/~ucfamus/papers/ubicomp15_trajectories.pdf)
 
