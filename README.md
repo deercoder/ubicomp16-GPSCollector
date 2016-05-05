@@ -35,6 +35,7 @@ Geolocation Collector(http://www.screencast.com/t/81hgh1he5Af)
 * Trying to connect ngCordova with sqlite
 * Only use ngCordova to get current geolocation but cannot connect it to sqlite
 * Use localstorage instead
+* Read papers about EMD algorithm and design algorithm for generating heat map
 
 ## Progress   April,11
 
@@ -43,6 +44,8 @@ Geolocation Collector(http://www.screencast.com/t/81hgh1he5Af)
 * Start to gather the GPS location
 * Collect geolocation by using current version(ios based)
 * Use a csv file to output the data
+* generate heat map based on Microsoft dataset
+* fix EMD algorithm details, check `pyEMD` repo and write demo
   
 ## Progress   April,18
 
@@ -51,6 +54,7 @@ Geolocation Collector(http://www.screencast.com/t/81hgh1he5Af)
 * Think of another way to display the data in detail  
 * Try another data set (Microsoft data set)
   *Bad taste in the matlab
+* use `pyEMD` to demonstrate two natural images, try fix efficiency issue
 
 
 ## Progress   April,25
@@ -60,9 +64,11 @@ Geolocation Collector(http://www.screencast.com/t/81hgh1he5Af)
 * Final debug and put the algorithm into use
 * Get rid of some noise made by changing from the wifi mode to celluar mode
 * Using a EMD value to classify the normal maps and abnormal maps
+* check MATLAB implementation, use newest 7-day dataset for experiment
   
 ## Progress   April,30
 
 * Get a result on collected data 
 * Try our best to get more data
 * Build a server as soon as possible
+* optimize distance averaging/weighting, show demo on newest data
