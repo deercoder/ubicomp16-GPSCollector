@@ -36,6 +36,7 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 * EMD Algorithm
 
 ![EMD](./ScreenShot/EMD_flow.jpg)
+![EMD](./ScreenShot/EMD_distance_Vector.jpg)
 
 * Data Analysis Flow
 
