@@ -33,6 +33,15 @@ We are living in a big data area where sensors are everywhere, i.e. Fitbit to re
 
 <img src="https://github.com/uml-ubicomp-2016-spring/ubicomp16-GPSCollector/blob/master/ScreenShot/Basic%20flow.jpg"  width="800" height="400">
 
+* EMD Algorithm
+
+![EMD](./ScreenShot/EMD_flow.jpg)
+
+* Data Analysis Flow
+
+![Data Analysis](./ScreenShot/Analysis_flow.jpg)
+
+
 * 1.Develop a Geolocation collector by using: 
 	* Framework:Ionic
 	* API:Google Map API
